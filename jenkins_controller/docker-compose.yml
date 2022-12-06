@@ -1,0 +1,10 @@
+version: '2.4'
+services:
+  jenkins:
+    image: jenkins-custom
+    container_name: jenkins
+    ports: 
+      - "8080:8880"
+    volumes:
+        - ${PWD}:/var/
+        - ${PWD}/casc.yml:/var/ /casc.yml
