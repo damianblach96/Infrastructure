@@ -21,7 +21,11 @@ jenkins:
           sshHostKeyVerificationStrategy: "nonVerifyingKeyVerificationStrategy"
       name: "Agent"
       remoteFS: "/home/jenkins/agent"
-      retentionStrategy: "always"  
+      retentionStrategy: "always" 
+jobs:
+  - file: /usr/share/jenkins/ref/jobs/backend.groovy
+  - file: /usr/share/jenkins/ref/jobs/frontend.groovy
+  - file: /usr/share/jenkins/ref/jobs/apps_of_apps.groovy
 credentials:
   system:
     domainCredentials:
