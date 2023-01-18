@@ -13,7 +13,7 @@ pipelineJob('app_of_apps') {
                         url("https://github.com/damianblach96/App_of_apps")
                     }
                     branches('main')
-                    scriptPath('Jenkinsfile')
+                    scriptPath('jenkinsfile')
                 }
             }
         }
