@@ -78,7 +78,6 @@ credentials:
                 jyN6t35pB9ZEpKJ4w1NZytTDMm1sKtfiyRDEl7xdM/gAgTURUIbsPKam+3h/7cmz7dR06/
                 QGdbV/viM4QtPlAAAADXBhbmRhQHZhZ3JhbnQBAgMEBQ==
                 -----END OPENSSH PRIVATE KEY-----
-
           scope: GLOBAL
           username: "jenkins"
       - basicSSHUserPrivateKey:
@@ -129,6 +128,15 @@ credentials:
           username: "jenkins"
 
 tool:
+  terraform:
+  installations:
+  - name: "Terraform"
+    properties:
+    - installSource:
+        installers:
+        - terraformInstaller:
+            id: "21207-linux-amd64"
+
   sonarRunnerInstallation:
     installations:
     - name: "SonarQube"
