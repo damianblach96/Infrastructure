@@ -8,7 +8,7 @@ pipelineJob('frontend') {
                         url("https://github.com/damianblach96/Frontend")
                     }
                     branches('main')
-                    scriptPath('Jenkinsfile')
+                    scriptPath('jenkinsfile')
                 }
             }
         }
